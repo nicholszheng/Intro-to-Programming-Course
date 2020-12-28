@@ -22,12 +22,24 @@ body {
   margin: 30px;
 }
 
+.resize {
+  width: 300px;
+  height: auto;
+  margin: 30px;
+}
+
+.imgcenter {
+  display: block;
+  margin: auto;
+}
+
+
 </style>
 </head>
 
 <body>
 
-<h1 class="center"; style="font-size: 30pt;"> My Notes by Nicole Zheng </h1>
+<h1 class="center"; style="font-size: 30pt;"> My Notes <br> by Nicole Zheng </h1>
 
 <p>What is a markup? </p>
 
@@ -91,7 +103,7 @@ Notice the width and height are not the same because I wanted the image to be sm
 the source where the image is will show the original size.</p>
 
 <a href="https://placebear.com/800/600">
-  <img src="https://placebear.com/500/300"
+  <img src="https://placebear.com/500/300"; class="resize imgcenter";
   alt = "Bears on a mountain">
 </a> <br><br>
 
@@ -100,7 +112,7 @@ the source where the image is will show the original size.</p>
   *Note: I had to add this image in the same folder as the notes.html
   so that others can download this as a package and get the same result.*</p>
 
-<img src="chinesenewyear.jpg"
+<img src="chinesenewyear.jpg"; class="resize imgcenter";
 alt="An image of relating to New Years">
 
 <h3> Adding style to this page </h3>
@@ -128,10 +140,22 @@ alt="An image of relating to New Years">
     <li> made a title colored blue in the same line as an already existing attribute for example
       <span style="color:blue;">[< h3 class = "center" ; style = "color : blue ; " > Nest List exercise < / h3 >]</span> <mark>(inline style attribute) </mark>
 
-    <li> use the <strong>< span > < / span > </strong>element to specifically color a word in a sentence blue <span style="color:blue;">[ < span style = "color: blue"> WORD < /span >] </span>
+    <li> use the <strong>< span > < / span > </strong>element to specifically
+      color a word in a sentence blue <span style="color:blue;">
+        [ < span style = "color: blue"> WORD < /span >] </span>
 
-<img src="CSS Syntax.png"
+    <li> added classes to make images sized at a specific width and height and centered <body>
+      <span style="color: blue">[.resize][.imgcenter]</span>
+
+    </body>
+
+
+
+
+<br><br>
+<img src="CSS Syntax.png"; class="resize imgcenter";
 alt="a diagram showing what each item is called in a ruleset"
+
 </body>
 
 </html>
